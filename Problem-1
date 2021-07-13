@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class caluculator{
+ double a,b;
+ caluculator(double a, double b){
+   this.a=a;
+   this.b=b;
+ }
+ double add(){ retuen a+b; }
+ double sub(){ retuen a-b; }
+ double mul(){ retuen a*b; }
+ double div(){ retuen a/b; }
+}
+ plublic class calc{
+   
+   public static void main(String args[]){
+      Scanner sr= new Scanner(System.in);
+      System.out.print("enter a");
+      Double a = input.nextDouble();
+      System.out.print("enter b");
+      Double b = input.nextDouble();
+      System.out.print("enter the operator(+,-,*,/) : ");
+      String op=sr.next();
+      Double c=0;
+      
+      caluculator obj=new calculator(a,b);
+      switch(op){
+          case "+": c=obj.add(); break;
+          case "-": c=obj.sub(); break;
+          case "*": c=obj.mul(); break;
+          case "/": c=obj.div(); break;
+          default: system.out.println("invalid operation");
+        }
+        
+        System.out.println(a + op + b "=" + c );
+        
+    }
+ }
+ 
